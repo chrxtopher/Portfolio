@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.7rem 2.5rem;
+  justify-content: flex-end;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #e3dee0;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  margin-right: 20px;
+}
+
+.nav-btn:hover {
+  cursor: pointer;
+  color: #ffbb00;
+}
+
+.nav-btn span {
+  color: #ffbb00;
+  margin-right: 3px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
