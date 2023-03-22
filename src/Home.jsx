@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import ArrowDown from "./svgs/arrow-down.svg";
+import CaretRight from "./svgs/caret-right.svg";
 import "./styles/home.css";
 
 const Home = () => {
@@ -22,6 +23,77 @@ const Home = () => {
         <button type="button">
           <img src={ArrowDown} alt="scroll down" />
         </button>
+      </div>
+      <div className="about">
+        <div className="bio">
+          <h3>
+            <span>1.</span> About Me <hr />
+          </h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi sit
+            explicabo debitis temporibus dolorum quaerat eum, aut odit molestias
+            tempora dolores autem. Magni dolor perferendis iste qui odit
+            provident accusamus! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Fugit tenetur, minima nihil hic quae numquam autem
+            itaque nesciunt? Accusantium laborum alias modi ipsa facere
+            consectetur enim officia dolore perspiciatis sed! Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Modi sit explicabo debitis
+            temporibus dolorum quaerat eum, aut odit molestias tempora dolores
+            autem. Magni dolor perferendis iste qui odit provident accusamus!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+            tenetur, minima nihil hic quae numquam autem itaque nesciunt?
+            Accusantium laborum alias modi ipsa facere consectetur enim officia
+            dolore perspiciatis sed!
+          </p>
+          <p>Here are some technologies I've been working with:</p>
+          <div className="technologies">
+            <ul>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                React
+              </li>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                JavaScript
+              </li>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                CSS3
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                Express
+              </li>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                PostgreSQL
+              </li>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                Node
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                Knex
+              </li>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                GitHub
+              </li>
+              <li>
+                <img src={CaretRight} alt="caret right" />
+                Postman
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="bio-img-border">
+          <div className="bio-img"></div>
+        </div>
       </div>
     </div>
   );
