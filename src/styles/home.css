@@ -67,7 +67,7 @@
   align-items: center;
 }
 
-.bio h3 {
+.bio h3, .projects h3 {
   font-size: 1.5rem;
 }
 
@@ -76,12 +76,12 @@
   padding-right: 4rem;
 }
 
-.bio span {
+.bio span, .projects span {
   margin-right: 3px;
   color: #ffbb00;
 }
 
-.bio hr {
+.bio hr, .projects hr {
   border: 1px solid #ffbb00;
   background-color: #ffbb00;
 }
@@ -129,5 +129,16 @@
   margin-right: 5px;
   width: 18px;
   height: 18px;
+}
+
+/* PROJECTS */
+
+.projects {
+  margin-top: 15rem;
+  width: 90%;
+}
+
+.projects hr {
+  margin-right: 100px;
 }
 
