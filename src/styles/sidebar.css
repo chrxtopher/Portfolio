@@ -1,8 +1,9 @@
 .sidebar {
-  position: absolute;
+  position: sticky;
   right: 0px;
   bottom: 0;
   padding: 1rem 2rem 0rem 2rem;
+  float: right;
 }
 
 .sidebar img {
