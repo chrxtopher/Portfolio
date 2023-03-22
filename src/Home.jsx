@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "./components/Header";
 import ArrowDown from "./svgs/arrow-down.svg";
 import CaretRight from "./svgs/caret-right.svg";
+import ProjectsPanel from "./components/ProjectsPanel";
 import "./styles/home.css";
 
 const Home = () => {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+
+  const scrollToAbout = () => {
+    aboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   return (
     <div className="home">
       <header>
-        <Header />
+        <Header clickAbout={scrollToAbout} clickProjects={scrollToProjects} />
       </header>
       <div className="intro">
         <p>Hi, my name is</p>
@@ -20,11 +32,11 @@ const Home = () => {
           and back-end technologies. I'm here to bring your business's online
           experience to the next level.
         </p>
-        <button type="button">
+        <button type="button" onClick={scrollToAbout}>
           <img src={ArrowDown} alt="scroll down" />
         </button>
       </div>
-      <div className="about">
+      <div className="about" ref={aboutRef}>
         <div className="bio">
           <h3>
             <span>1.</span> About Me <hr />
@@ -94,6 +106,12 @@ const Home = () => {
         <div className="bio-img-border">
           <div className="bio-img"></div>
         </div>
+      </div>
+      <div className="projects" ref={projectsRef}>
+        <h3>
+          <span>2.</span> Projects <hr />
+        </h3>
+        <ProjectsPanel />
       </div>
     </div>
   );
