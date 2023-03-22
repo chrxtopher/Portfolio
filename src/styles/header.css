@@ -3,6 +3,9 @@
   align-items: center;
   padding: 1.7rem 2.5rem;
   justify-content: flex-end;
+  height: 40px;
+  background-color: #151414;
+  box-shadow: 0 0 30px 40px #151414;
 }
 
 .nav-btn {
