@@ -1,0 +1,29 @@
+.sidebar {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+.sidebar img {
+  width: 35px;
+  height: 35px;
+}
+
+.sidebar a {
+  margin-bottom: 15px;
+}
+
+.sidebar hr {
+  height: 100px;
+  background-color: #ffbb00;
+  width: 2px;
+  border: none;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
