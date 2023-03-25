@@ -76,7 +76,7 @@ const ProjectsPanel = () => {
         {activeProject === "tullisLanding" && (
           <Project
             title="Tullis Landing"
-            description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit tenetur, minima nihil hic quae numquam autem itaque nesciunt? Accusantium laborum alias modi ipsa facere consectetur enim officia dolore perspiciatis sed!"
+            description="Landing page for Arizona native hip-hop artist, Tullis. I worked with him and his producer, Caleb Roddy (my brother), to put together a website that allows his fans and business partners to easily access his music, press articles, and socials."
             tech={["React", "CSS3", "Vercel"]}
             active={activeProject}
             gitHubUrl="https://github.com/chrxtopher/jt-landing"
